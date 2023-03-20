@@ -1,6 +1,6 @@
 ### Demo Video
 
-<video src="./demo.mkv" controls="controls" style="max-width: 730px; max-height: 400px;">
+<video src="https://github.com/mritunjaysaha/Mritunjay-Frontend-Developer/blob/main/demo.mkv" controls="controls" style="max-width: 730px; max-height: 400px;">
 
 ### Server
 
