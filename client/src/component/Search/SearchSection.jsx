@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import DateTimePicker from 'react-datetime-picker';
 import axios from 'axios';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { setStatusData, setOriginalLaunchData, setTypeData } from '../../redux/capsuleSlice';
 
 export function SearchSection() {
     const [status, setStatus] = useState('active');
     const [originalLaunch, setOriginalLaunch] = useState(new Date());
     const [type, setType] = useState('');
     const { _id } = useSelector((state) => state.user);
+
+    const dispatch = useDispatch();
 
     function handleStatusChange(e) {
         setStatus(e.target.value);
@@ -23,6 +27,8 @@ export function SearchSection() {
         const res = await axios.get(`/api/capsules/status/${_id}?status=${status}`);
 
         console.log({ res });
+
+        dispatch(setStatusData(res.data));
     }
 
     async function handleSearchByOriginalLaunch(e) {
@@ -33,6 +39,8 @@ export function SearchSection() {
         );
 
         console.log({ res });
+
+        dispatch(setOriginalLaunchData(res.data));
     }
 
     async function handleSearchByType(e) {
@@ -41,6 +49,8 @@ export function SearchSection() {
         const res = await axios.get(`/api/capsules/type/${_id}?type=${type}`);
 
         console.log({ res });
+
+        dispatch(setTypeData(res.data));
     }
 
     const formClass = 'flex flex-col justify-center text-center pt-12 gap-8';
