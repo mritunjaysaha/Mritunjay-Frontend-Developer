@@ -1,6 +1,6 @@
 ### Demo Video
 
-<video src="./demo.mkv" controls="controls" style="max-width: 730px;">
+<video src="./demo.mkv" controls="controls" style="max-width: 730px; max-height: 400px;">
 
 ### Server
 
