@@ -1,6 +1,3 @@
-### Demo Video
-
-<video src="https://github.com/mritunjaysaha/Mritunjay-Frontend-Developer/blob/main/demo.mkv" controls="controls" style="max-width: 730px; max-height: 400px;">
 
 ### Server
 
@@ -38,3 +35,7 @@ npm run dev
 ```
 
 3. View the website at `http://localhost:5173`
+
+
+### Demo Video
+![Demo Video](demo.mkv)
