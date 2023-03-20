@@ -22,7 +22,7 @@ export const capsuleSlice = createSlice({
         setTypeData: (state, { payload }) => {
             state.type = payload
             state.originalLaunch = []
-            state.type = []
+            state.status = []
         }
     }
 })

@@ -58,7 +58,7 @@ export function SearchSection() {
     return (
         <section className='flex flex-col justify-center items-center py-20'>
             <h3 className='text-lg'>Search Capsules</h3>
-            <div className='flex w-full justify-evenly'>
+            <div className='flex flex-col lg:flex-row  w-full justify-evenly'>
                 <form className={formClass} onSubmit={handleSearchByStatus}>
                     <label for='status'>By status</label>
                     <select
@@ -70,6 +70,7 @@ export function SearchSection() {
                     >
                         <option value='active'>Active</option>
                         <option value='retired'>Retired</option>
+                        <option value='unknown'>Unknown</option>
                     </select>
 
                     <button type='submit'>Submit</button>

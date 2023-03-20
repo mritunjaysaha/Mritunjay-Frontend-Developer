@@ -17,7 +17,7 @@ export function DataGrid() {
     }, [status, originalLaunch, type]);
 
     return (
-        <section className='flex pb-20 px-20 gap-4'>
+        <section className='flex flex-col md:flex-row items-center justify-center pb-20 px-20 gap-4'>
             {data.map(
                 (
                     {
