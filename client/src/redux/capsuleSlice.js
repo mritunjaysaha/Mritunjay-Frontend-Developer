@@ -10,13 +10,19 @@ export const capsuleSlice = createSlice({
     reducers: {
         setStatusData: (state, { payload }) => {
             state.status = payload
+            state.originalLaunch = []
+            state.type = []
         }
         ,
         setOriginalLaunchData: (state, { payload }) => {
             state.originalLaunch = payload
+            state.status = []
+            state.type = []
         },
         setTypeData: (state, { payload }) => {
             state.type = payload
+            state.originalLaunch = []
+            state.type = []
         }
     }
 })

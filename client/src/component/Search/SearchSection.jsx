@@ -56,7 +56,7 @@ export function SearchSection() {
     const formClass = 'flex flex-col justify-center text-center pt-12 gap-8';
 
     return (
-        <section className='flex flex-col justify-center items-center bg-red-50'>
+        <section className='flex flex-col justify-center items-center py-20'>
             <h3 className='text-lg'>Search Capsules</h3>
             <div className='flex w-full justify-evenly'>
                 <form className={formClass} onSubmit={handleSearchByStatus}>

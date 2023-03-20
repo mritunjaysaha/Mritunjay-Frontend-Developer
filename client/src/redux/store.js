@@ -5,6 +5,6 @@ import { capsuleSlice } from "./capsuleSlice"
 export const store = configureStore({
     reducer: {
         user: userSlice.reducer,
-        capsule: capsuleSlice
+        capsule: capsuleSlice.reducer
     }
 })
